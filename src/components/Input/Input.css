@@ -1,0 +1,9 @@
+.input {
+  padding: 4px;
+  background: transparent;
+  color: #fff;
+  font-size: inherit;
+  font-family: inherit;
+  border: none;
+  min-width: 50px;
+}

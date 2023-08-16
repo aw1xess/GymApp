@@ -1,0 +1,26 @@
+.addNote-button {
+  display: grid;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  content: "+";
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.addNote-button:after {
+  content: url(/src/assets/images/plus.svg);
+  display: grid;
+  color: #000;
+  font-weight: 300;
+  justify-self: center;
+  align-self: center;
+}
+
+.addNote-button:hover {
+  scale: 1.2;
+}

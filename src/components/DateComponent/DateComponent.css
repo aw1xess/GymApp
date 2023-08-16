@@ -1,0 +1,33 @@
+.date {
+  text-align: center;
+  position: relative;
+}
+
+.date span {
+  display: block;
+  width: 100%;
+  height: 0.8px;
+  background: #fff;
+}
+
+.down-arrow {
+  width: 28px;
+  height: 24px;
+  display: inline-block;
+  position: absolute;
+  right: 50px;
+  top: 8px;
+  content: url(/src/assets/images/down-arrow.png);
+  cursor: pointer;
+}
+
+.up-arrow {
+  width: 28px;
+  height: 24px;
+  display: inline-block;
+  position: absolute;
+  right: 84px;
+  top: 8px;
+  content: url(/src/assets/images/up-arrow.png);
+  cursor: pointer;
+}

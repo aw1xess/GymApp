@@ -1,0 +1,8 @@
+{"_id":{"$oid":"64243773d718d72b3f4aa3ea"},"name":"Bench Press","weight":"20,40,40,40,40","reps":"10,5,4,4,4","status":"done","date":"27.03.2023"}
+{"_id":{"$oid":"64254602c1551304477dddd1"},"name":"Overhead Press","weight":"10,15,15,10,10","reps":"7,5,3,6,4","status":"done","date":"27.03.2023"}
+{"_id":{"$oid":"64254641c1551304477dddd2"},"name":"Barbell Row","weight":"30,30,30,30","reps":"10,10,9,10","status":"done","date":"27.03.2023"}
+{"_id":{"$oid":"64254673c1551304477dddd3"},"name":"Lat Pulldown","weight":"50,50,50","reps":"10,10,8","status":"done","date":"27.03.2023"}
+{"_id":{"$oid":"64254690c1551304477dddd4"},"name":"Dumbbell Curls","weight":"9,9,9","reps":"10,10,8","status":"done","date":"27.03.2023"}
+{"_id":{"$oid":"642546dac1551304477dddd5"},"name":"Triceps Pushdowns(з рівной палочкой)","weight":"35,35,35","reps":"10,10,9","status":"done","date":"27.03.2023"}
+{"_id":{"$oid":"64254740c1551304477dddd6"},"name":"Згибання на предпліччя(долоня всередину)","weight":"9,9,9","reps":"12,12,12","status":"undone","date":"27.03.2023"}
+{"_id":{"$oid":"6425476ec1551304477dddd8"},"name":"Згибання на предпліччя(долоня назовні)","weight":"6,6,6","reps":"12,12,10","status":"undone","date":"27.03.2023"}

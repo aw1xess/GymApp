@@ -1,0 +1,10 @@
+.deleteExercise-button {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  content: url(/src/assets/images/trash-svgrepo-com.svg);
+  cursor: pointer;
+}
