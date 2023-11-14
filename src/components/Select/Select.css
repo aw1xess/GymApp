@@ -1,47 +1,53 @@
 .select {
-  position: relative;
-  margin: 0 auto;
-  text-align: center;
-  width: 400px;
-  border: 1px solid #000;
-  border-radius: 0.25em;
-  padding: 0.25em 0;
-  cursor: pointer;
-  background-color: #fff;
-  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	width: 400px;
+	border-radius: 0.25em;
+	padding: 0.25em 0;
+	cursor: pointer;
+	background-color: #fff;
+}
+
+.selectDays {
+	background-color: #24568a;
 }
 
 .select::after {
-  content: "";
-  width: 0.8em;
-  height: 0.5em;
-  background-color: #777;
-  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
-  display: block;
-  position: absolute;
-  right: 10px;
-  top: 40%;
+	content: "";
+	width: 0.8em;
+	height: 0.5em;
+	background-color: #fff;
+	clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 40%;
 }
+
 select {
-  text-align: center;
-  appearance: none;
-  background-color: transparent;
-  border: none;
-  margin: 0;
-  width: 100%;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: inherit;
-  line-height: inherit;
-  outline: none;
+	text-align: center;
+	appearance: none;
+	background-color: transparent;
+	margin: 0;
+	width: 100%;
+	font-family: inherit;
+	font-size: inherit;
+	cursor: inherit;
+	line-height: inherit;
+}
+
+.selectDays select {
+	background: #24568a;
+	color: #fff;
 }
 
 label {
-  display: block;
-  font-size: 24px;
-  margin-bottom: 14px;
+	display: block;
+	font-size: 24px;
+	margin-bottom: 14px;
 }
 
-form {
-  text-align: center;
+.selectDays form {
+	width: fit-content;
 }

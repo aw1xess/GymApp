@@ -1,13 +1,15 @@
+.addExercise {
+	display: flex;
+	padding-top: 14px;
+}
+
 .addExercise-button {
-  display: grid;
-  font-size: 40px;
-  line-height: 36px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  background: #3553ff;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  border-radius: 50%;
-  cursor: pointer;
+	cursor: pointer;
+	width: 28px;
+}
+
+.addExercise-text {
+	margin-left: 6px;
+	font-size: 0.8em;
+	color: #85a5d5;
 }

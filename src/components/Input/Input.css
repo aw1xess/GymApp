@@ -1,9 +1,35 @@
+.input-container {
+	position: relative;
+	display: flex;
+	margin-right: 20px;
+	background: #ffffff3f;
+	border-radius: 6px;
+	color: #fff;
+	transition: scale 0.15s ease-out;
+}
+
+.input-container:hover {
+	scale: 1.1;
+}
+
 .input {
-  padding: 4px;
-  background: transparent;
-  color: #fff;
-  font-size: inherit;
-  font-family: inherit;
-  border: none;
-  min-width: 50px;
+	padding-right: 0px;
+	background: transparent;
+	color: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	border: none;
+	outline: none;
+	visibility: hidden;
+	padding: 4px;
+	transition: width 0.15s ease-in;
+}
+
+.input-display {
+	padding: 4px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	transition: visibility 0.2s ease-in;
 }

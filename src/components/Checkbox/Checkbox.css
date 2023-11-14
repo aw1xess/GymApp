@@ -1,45 +1,46 @@
 input[type="checkbox"] {
-  /* Add if not using autoprefixer */
-  -webkit-appearance: none;
-  appearance: none;
-  /* For iOS < 15 to remove gradient background */
-  background-color: #fff;
-  /* Not removed via appearance */
-  margin: 0;
-  font: inherit;
-  color: currentColor;
-  width: 1.15em;
-  height: 1.15em;
-  border: 0.15em solid currentColor;
-  border-radius: 0.15em;
-  transform: translateY(-0.075em);
-  display: flex;
+	/* Add if not using autoprefixer */
+	-webkit-appearance: none;
+	appearance: none;
+	/* For iOS < 15 to remove gradient background */
+	background-color: #fff;
+	/* Not removed via appearance */
+	margin: 0;
+	font: inherit;
+	color: currentColor;
+	width: 1.1em;
+	height: 1.1em;
+	border: 0.15em solid currentColor;
+	border-radius: 0.15em;
+	display: flex;
+	transition: scale 0.15s ease-out;
+}
+
+input[type="checkbox"]:hover {
+	scale: 1.1;
 }
 
 input[type="checkbox"]::before {
-  content: "";
-  display: block;
-  width: 14px;
-  height: 14px;
-  transform: scale(0);
-  transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em #000;
-  margin: auto;
-  transform-origin: bottom left;
-  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+	content: "";
+	display: block;
+	width: 14px;
+	height: 14px;
+	transform: scale(0);
+	transition: 120ms transform ease-in-out;
+	box-shadow: inset 1em 1em #002d75;
+	margin: auto;
+	transform-origin: bottom left;
+	clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 }
 
 input[type="checkbox"]:checked::before {
-  transform: scale(1);
+	transform: scale(1);
 }
 
 input[type="checkbox"]::after {
-  content: "";
+	content: "";
 }
 
 .checkbox {
-  position: absolute;
-  right: 50px;
-  top: 10px;
-  cursor: pointer;
+	cursor: pointer;
 }

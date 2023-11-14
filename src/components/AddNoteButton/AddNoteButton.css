@@ -1,26 +1,22 @@
 .addNote-button {
-  display: grid;
-  position: fixed;
-  bottom: 2%;
-  right: 2%;
-  content: "+";
-  width: 70px;
-  height: 70px;
-  background: #fff;
-  border-radius: 100%;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
+	position: fixed;
+	bottom: 2%;
+	right: 2%;
+	width: 2.8em;
+	height: 2.8em;
+	background: #fff;
+	border-radius: 100%;
+	transition: all 0.15s ease-out;
+	font-size: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.addNote-button:after {
-  content: url(/src/assets/images/plus.svg);
-  display: grid;
-  color: #000;
-  font-weight: 300;
-  justify-self: center;
-  align-self: center;
+.addNote-button__image {
+	width: 1.5em;
 }
 
 .addNote-button:hover {
-  scale: 1.2;
+	scale: 1.2;
 }

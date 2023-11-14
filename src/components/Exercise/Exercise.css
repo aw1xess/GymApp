@@ -1,6 +1,35 @@
 .exercise {
-  position: relative;
-  margin-bottom: 16px;
-  margin-left: 10px;
-  padding-right: 44px;
+	padding: 10px 0px;
+	border-bottom: 1px solid #85a5d5;
+	display: flex;
+	justify-content: space-between;
+}
+
+.exerciseInfo {
+	width: fit-content;
+	display: flex;
+}
+
+.exercise-buttons {
+	justify-content: space-between;
+	width: 2.5em;
+	display: flex;
+	align-items: center;
+}
+
+.exerciseInfo .input-container:nth-child(2) {
+	padding-right: 2.5em;
+}
+
+.exerciseInfo .input-container:nth-child(4) {
+	padding-right: 3em;
+}
+
+.exerciseInfo .select-unit:nth-child(3) {
+	margin-left: -3.8em;
+	margin-right: 30px;
+}
+
+.exerciseInfo .select-unit:nth-child(5) {
+	margin-left: -4.5em;
 }

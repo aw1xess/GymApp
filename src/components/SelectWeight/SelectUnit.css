@@ -1,0 +1,38 @@
+.select-unit {
+	display: inline-block;
+	padding: 0px;
+	width: fit-content;
+	height: fit-content;
+	align-self: center;
+	font-size: 0.8em;
+	border: none;
+	background: rgba(255, 255, 255, 0.8);
+	transition: scale 0.15s ease-out;
+}
+
+.select-unit::after {
+	width: 13px;
+	height: 10px;
+	background: #002d75;
+	right: 4px;
+}
+
+.select-unit:hover {
+	scale: 1.08;
+}
+
+select {
+	text-align: center;
+	appearance: none;
+	background-color: transparent;
+	border: none;
+	margin: 0;
+	padding: 2px 22px 2px 2px;
+	width: 100%;
+	font-family: inherit;
+	font-size: inherit;
+	cursor: inherit;
+	line-height: inherit;
+	outline: none;
+	color: #002d75;
+}

@@ -1,5 +1,31 @@
 .note {
-  margin: 30px auto 0px auto;
-  width: 80%;
-  border: 1px solid #fff;
+	display: flex;
+	margin-top: 40px;
+}
+
+.note-arrows {
+	padding: 10px 10px 10px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-size: 1em;
+}
+
+.note-arrows button {
+	transition: scale 0.15s ease-out;
+}
+
+.note-arrows button:hover {
+	scale: 1.5;
+}
+
+.note-arrows img {
+	width: 3.4em;
+}
+
+.note-info {
+	padding: 10px 20px;
+	border-radius: 12px;
+	background: #24568a;
+	width: 100%;
 }

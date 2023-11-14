@@ -1,28 +1,74 @@
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 28px;
 }
 
 body {
-  background: #404040;
-  color: #fff;
-  font-family: "Inter", sans-serif;
-  font-size: 24px;
+	background: #002d75;
+	color: #fff;
+	font-family: "Inter", sans-serif;
+}
+
+body::-webkit-scrollbar {
+	width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+	border-radius: 6px;
+	margin: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #e3f1ff;
+	border-radius: 6px;
+}
+
+button {
+	border: none;
+	appearance: none;
+	cursor: pointer;
+	background-color: inherit;
 }
 
 h1 {
-  text-align: center;
-  font-size: 40px;
-  margin-top: 16px;
-  margin-bottom: 26px;
+	font-size: 1.5em;
+	width: fit-content;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 16px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo img {
+	width: 2em;
+	margin: 0px 5px 0px 10px;
 }
 
 .bold {
-  font-weight: 600;
+	font-weight: 600;
+}
+
+.container {
+	width: 90vw;
+	margin-left: auto;
+	margin-right: auto;
 }

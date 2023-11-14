@@ -1,14 +1,14 @@
-.deleteNote-button {
+.duplicate-button {
 	cursor: pointer;
 	font-size: 1em;
 	display: flex;
 	transition: scale 0.15s ease-out;
 }
 
-.deleteNote-button:hover {
+.duplicate-button:hover {
 	scale: 1.2;
 }
 
-.deleteNote-button img {
-	width: 0.9em;
+.duplicate-button img {
+	width: 1em;
 }
