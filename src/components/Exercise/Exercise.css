@@ -1,13 +1,41 @@
 .exercise {
-	padding: 10px 0px;
 	border-bottom: 1px solid #85a5d5;
 	display: flex;
 	justify-content: space-between;
 }
 
 .exerciseInfo {
-	width: fit-content;
+	width: 90%;
 	display: flex;
+	flex-wrap: wrap;
+}
+
+.weight,
+.count {
+	display: flex;
+	background: #ffffff3f;
+	border-radius: 6px;
+	height: fit-content;
+	margin: 10px 20px 10px 0px;
+	padding-right: 6px;
+	transition: scale 0.15s ease-out;
+}
+
+.weight:hover,
+.count:hover {
+	scale: 1.1;
+}
+
+.weight .input-container,
+.count .input-container {
+	display: flex;
+	background: none;
+	margin: 0px 6px 0px 0px;
+}
+
+.weight .input-container:hover,
+.count .input-container:hover {
+	scale: none;
 }
 
 .exercise-buttons {
@@ -15,21 +43,4 @@
 	width: 2.5em;
 	display: flex;
 	align-items: center;
-}
-
-.exerciseInfo .input-container:nth-child(2) {
-	padding-right: 2.5em;
-}
-
-.exerciseInfo .input-container:nth-child(4) {
-	padding-right: 3em;
-}
-
-.exerciseInfo .select-unit:nth-child(3) {
-	margin-left: -3.8em;
-	margin-right: 30px;
-}
-
-.exerciseInfo .select-unit:nth-child(5) {
-	margin-left: -4.5em;
 }

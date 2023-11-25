@@ -75,30 +75,34 @@ export default function Exercise({
 					id={uuid().slice(0, 8)}
 					handleDataChange={handleExDataChange}
 				/>
-				<Input
-					value={weight}
-					name="weight"
-					id={uuid().slice(0, 8)}
-					handleDataChange={handleExDataChange}
-				/>
-				<SelectUnit
-					type="weight"
-					selectedOption={unit}
-					name="unit"
-					handleDataChange={handleExDataChange}
-				/>
-				<Input
-					value={reps}
-					name="reps"
-					id={uuid().slice(0, 8)}
-					handleDataChange={handleExDataChange}
-				/>
-				<SelectUnit
-					type="duration"
-					selectedOption={duration}
-					name="duration"
-					handleDataChange={handleExDataChange}
-				/>
+				<div className="weight">
+					<Input
+						value={weight}
+						name="weight"
+						id={uuid().slice(0, 8)}
+						handleDataChange={handleExDataChange}
+					/>
+					<SelectUnit
+						type="weight"
+						selectedOption={unit}
+						name="unit"
+						handleDataChange={handleExDataChange}
+					/>
+				</div>
+				<div className="count">
+					<Input
+						value={reps}
+						name="reps"
+						id={uuid().slice(0, 8)}
+						handleDataChange={handleExDataChange}
+					/>
+					<SelectUnit
+						type="duration"
+						selectedOption={duration}
+						name="duration"
+						handleDataChange={handleExDataChange}
+					/>
+				</div>
 			</div>
 			<div className="exercise-buttons">
 				<Checkbox status={status} name="status" id={id} />

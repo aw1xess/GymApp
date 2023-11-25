@@ -1,11 +1,13 @@
 .input-container {
 	position: relative;
-	display: flex;
-	margin-right: 20px;
+	display: block;
+	overflow: visible;
+	margin: 10px 20px 10px 0px;
 	background: #ffffff3f;
 	border-radius: 6px;
 	color: #fff;
 	transition: scale 0.15s ease-out;
+	max-width: 96%;
 }
 
 .input-container:hover {
@@ -20,16 +22,23 @@
 	font-family: inherit;
 	border: none;
 	outline: none;
-	visibility: hidden;
 	padding: 4px;
 	transition: width 0.15s ease-in;
+	display: none;
+	max-width: 96%;
 }
 
 .input-display {
 	padding: 4px;
-	position: absolute;
-	top: 0;
-	left: 0;
 	cursor: pointer;
 	transition: visibility 0.2s ease-in;
+	max-width: 100%;
+	height: fit-content;
+	word-wrap: break-word;
+}
+
+@media screen and (max-width: 1024px) {
+	.input-container:hover {
+		scale: 1.05;
+	}
 }

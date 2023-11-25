@@ -1,12 +1,9 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html {
@@ -17,6 +14,12 @@ body {
 	background: #002d75;
 	color: #fff;
 	font-family: "Inter", sans-serif;
+}
+
+.container {
+	width: 90vw;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 body::-webkit-scrollbar {
@@ -67,8 +70,34 @@ nav {
 	font-weight: 600;
 }
 
-.container {
-	width: 90vw;
-	margin-left: auto;
-	margin-right: auto;
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 94vw;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	html {
+		font-size: 24px;
+	}
+
+	.container {
+		width: 96vw;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	nav {
+		flex-direction: column;
+	}
+
+	.logo {
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	html {
+		font-size: 26px;
+	}
 }

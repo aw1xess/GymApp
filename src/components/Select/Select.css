@@ -23,6 +23,7 @@
 	position: absolute;
 	right: 10px;
 	top: 40%;
+	pointer-events: none;
 }
 
 select {
@@ -50,4 +51,10 @@ label {
 
 .selectDays form {
 	width: fit-content;
+}
+
+@media screen and (max-width: 410px) {
+	.select {
+		width: 96vw;
+	}
 }

@@ -52,9 +52,9 @@ export default class Input extends React.Component {
 					onChange={this.handleInputChange}
 					onBlur={(e) => {
 						this.handleDataChange();
-						e.target.style.visibility = "hidden";
+						e.target.style.display = "none";
 						const span = document.getElementById(this.props.id + 1);
-						span.style.visibility = "visible";
+						span.style.display = "inline-block";
 						this.resizeInput();
 					}}
 					onFocus={() => {
@@ -65,9 +65,9 @@ export default class Input extends React.Component {
 					className="input-display"
 					id={this.props.id + 1}
 					onClick={(e) => {
-						e.target.style.visibility = "hidden";
+						e.target.style.display = "none";
 						const input = document.getElementById(this.props.id);
-						input.style.visibility = "visible";
+						input.style.display = "inline-block";
 						input.focus();
 						input.style.width = input.value.length + 1 + "ch";
 					}}

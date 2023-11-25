@@ -4,7 +4,7 @@
 }
 
 .note-arrows {
-	padding: 10px 10px 10px 0px;
+	padding: 10px 4px 10px 0px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -19,6 +19,11 @@
 	scale: 1.5;
 }
 
+.up-arrow__button,
+.down-arrow__button {
+	width: fit-content;
+}
+
 .note-arrows img {
 	width: 3.4em;
 }
@@ -28,4 +33,68 @@
 	border-radius: 12px;
 	background: #24568a;
 	width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+	.note-arrows img {
+		width: 2.8em;
+	}
+
+	.note-arrows button:hover {
+		scale: 1.3;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.note {
+		position: relative;
+		margin-top: 110px;
+		margin-bottom: 60px;
+	}
+
+	.note:first-child {
+		margin-top: 60px;
+	}
+
+	.note-arrows img {
+		width: 4.2em;
+	}
+
+	.up-arrow__button,
+	.down-arrow__button {
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+
+	.up-arrow__button {
+		top: -40px;
+	}
+
+	.down-arrow__button {
+		bottom: -40px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.note {
+		position: relative;
+		margin-top: 100px;
+		margin-bottom: 60px;
+	}
+
+	.note-arrows img {
+		width: 3.6em;
+	}
+
+	.up-arrow__button {
+		top: -36px;
+	}
+
+	.down-arrow__button {
+		bottom: -36px;
+	}
 }
