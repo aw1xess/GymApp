@@ -28,7 +28,7 @@ select {
 	border: none;
 	margin: 0;
 	padding: 2px 22px 2px 2px;
-	width: fit-content;
+	width: 100%;
 	font-family: inherit;
 	font-size: inherit;
 	cursor: inherit;
