@@ -41,3 +41,9 @@
 		scale: 1.05;
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.input-container:hover {
+		scale: 1;
+	}
+}

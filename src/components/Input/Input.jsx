@@ -56,6 +56,15 @@ export default class Input extends React.Component {
 						const span = document.getElementById(this.props.id + 1);
 						span.style.display = "inline-block";
 						this.resizeInput();
+						if (
+							span.parentElement.parentElement.classList[0] ===
+								"weight" ||
+							span.parentElement.parentElement.classList[0] ===
+								"count"
+						) {
+							span.parentElement.parentElement.children[1].style.display =
+								"block";
+						}
 					}}
 					onFocus={() => {
 						this.setState({ previousValue: this.state.value });
@@ -70,6 +79,15 @@ export default class Input extends React.Component {
 						input.style.display = "inline-block";
 						input.focus();
 						input.style.width = input.value.length + 1 + "ch";
+						if (
+							input.parentElement.parentElement.classList[0] ===
+								"weight" ||
+							input.parentElement.parentElement.classList[0] ===
+								"count"
+						) {
+							input.parentElement.parentElement.children[1].style.display =
+								"none";
+						}
 					}}
 				>
 					{this.state.value}
