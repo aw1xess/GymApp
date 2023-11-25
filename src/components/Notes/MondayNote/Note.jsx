@@ -19,26 +19,6 @@ export default function Note({
 }) {
 	const [exercises, setExercises] = useState([]);
 
-	const [screenSize, setScreenSize] = useState(getCurrentDimension());
-
-	function getCurrentDimension() {
-		return {
-			width: window.innerWidth,
-			height: window.innerHeight,
-		};
-	}
-
-	useEffect(() => {
-		const updateDimension = () => {
-			setScreenSize(getCurrentDimension());
-		};
-		window.addEventListener("resize", updateDimension);
-
-		return () => {
-			window.removeEventListener("resize", updateDimension);
-		};
-	}, [screenSize]);
-
 	const moveExerciseListItem = useCallback(
 		(dragIndex, hoverIndex) => {
 			const dragItem = exercises[dragIndex];
@@ -157,7 +137,7 @@ export default function Note({
 						}}
 					>
 						<img
-							src={require(screenSize.width > 768
+							src={require(window.innerWidth > 768
 								? "../../../assets/images/up-arrow.png"
 								: "../../../assets/images/mobile-arrow-up.png")}
 							alt="arrow up"
@@ -170,7 +150,7 @@ export default function Note({
 						}}
 					>
 						<img
-							src={require(screenSize.width > 768
+							src={require(window.innerWidth > 768
 								? "../../../assets/images/down-arrow.png"
 								: "../../../assets/images/mobile-arrow-down.png")}
 							alt="arrow down"

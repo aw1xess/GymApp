@@ -1,7 +1,6 @@
 .input-container {
 	position: relative;
 	display: block;
-	overflow: visible;
 	margin: 10px 20px 10px 0px;
 	background: #ffffff3f;
 	border-radius: 6px;
@@ -40,11 +39,5 @@
 @media screen and (max-width: 1024px) {
 	.input-container:hover {
 		scale: 1.05;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.input-container:hover {
-		scale: none;
 	}
 }
